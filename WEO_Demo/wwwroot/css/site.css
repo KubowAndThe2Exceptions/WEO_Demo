@@ -16,3 +16,44 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.landing-image {
+    max-width: 100%;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.home-content {
+}
+
+.service-cards {
+    margin-top: -140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.service-card {
+    height: 400px;
+    width: 180px;
+}
+
+.card-top {
+    background-color: #daeace;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 42%;
+    width: auto;
+    display: block;
+}
+.card-bottom {
+    background-color: #d3dde9;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 58%;
+    width: auto;
+    display: block;
+}
