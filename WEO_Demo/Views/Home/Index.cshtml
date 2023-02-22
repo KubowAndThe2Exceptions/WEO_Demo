@@ -2,46 +2,44 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div>
-    <img class="landing-image" src="resources/imgs/DentalRoom.jpg"/>
+<div class="parallax-container">
+
 </div>
 <div class="home-content">
-    <div style="width: 100%; min-height: 500px; text-align: center; vertical-align: middle; background-color: #879bae">
+    <div class="services-container">
         <div class="service-cards">
-            <div class="service-card">
-                <div class="card-top">
-                    <p>Icon</p>
-                </div>
-                <div class="card-bottom">
-                    <p>content below</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="card-top">
-                    <p>Icon</p>
-                </div>
-                <div class="card-bottom">
-                    <p>content below</p>
+            <div class="service-card" >
+                <div role="link" class="card-top" onclick="location.href='#';" style="cursor: pointer;">
+                    <img src="~/resources/icons/teeth.svg" aria-label="row of teeth, icon" style="height: 50px; width: auto;"/>
+                    <h4>
+                        Invisalign
+                    </h4>
                 </div>
             </div>
             <div class="service-card">
-                <div class="card-top">
-                    <p>Icon</p>
-                </div>
-                <div class="card-bottom">
-                    <p>content below</p>
+                <div role="link" class="card-top" onclick="location.href='#';" style="cursor: pointer;">
+                    <img src="~/resources/icons/tooth.svg" aria-label="tooth implant, icon" style="height: 50px; width: auto;"/>
+                    <h4>
+                        Implants
+                    </h4>
                 </div>
             </div>
             <div class="service-card">
-                <div class="card-top">
-                    <p>Icon</p>
-                </div>
-                <div class="card-bottom">
-                    <p>content below</p>
+                <div role="link" class="card-top" onclick="location.href='#';" style="cursor: pointer;">
+                    <img src="~/resources/icons/braces.svg" aria-label="teeth with braces, icon" style="height: 50px; width: auto;"/>
+                    <h4>
+                        Preventative
+                    </h4>
                 </div>
             </div>
         </div>
-        <div>
+        <a href="#" role="button" class="btn btn-default" id="services-btn" style="margin-top: 50px;">Learn about our other services</a>
+    </div>
+    <div class="about-container">
+        <div style="max-width: 40%">
+            <img src="~/resources/imgs/WomanSmilingCropped.jpg" aria-label="woman smiling with sunset in the background" style="width: 100%; height: auto; border: solid 6px; border-radius: 50px; border-color: #f2f7ee;"/>
+        </div>
+        <div style="max-width: 40%">
             <h1>Smiles are a lifestyle</h1>
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat eget lorem ut eleifend. 
                 Ut id eros purus. Integer euismod leo non velit ultricies, vitae tristique neque dictum. Aliquam quis nunc finibus, 
@@ -49,46 +47,122 @@
                 Proin ac ultricies velit. Praesent eleifend non tortor blandit dignissim. In semper, est ut ultricies iaculis, 
                 ipsum eros vulputate massa, nec dignissim metus massa non mauris. Mauris tristique dignissim ligula, eu convallis 
                 odio vestibulum quis. Nullam quis consequat urna. Proin tincidunt dignissim augue id congue. Nam ullamcorper, 
-                tortor at molestie ultrices, enim leo dictum massa, sit amet maximus li</h3>
+                tortor at molestie ultrices, enim leo dictum massa, sit amet maximus li
+            </h3>
+            
+            <a href="#" role="button" class="btn-bright btn btn-default" style="margin-top: 30px;">Learn more about us</a>
         </div>
     </div>
-    <div style="width: 100%; text-align: center; vertical-align: middle; background-color: #d3dde9">
-        <h1>Meet docs</h1>
-        <div style="display: flex; flex-direction: row; justify-content: space-around; margin-left: 40px; margin-right: 40px;">
-            <div>
-                <img src="resources/imgs/MeetDentistCropped.jpg" style="max-height: 800px; width: auto; margin-right: 30px;"/>
-            </div>
-            <div style="margin-top: 30px;">
-                <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id mollis sapien. Sed quis luctus tortor, vel tempus nibh. 
+    <div class="meetdocs-container">
+        <div style="max-width: 40%">
+            <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id mollis sapien. Sed quis luctus tortor, vel tempus nibh. 
+                Pellentesque semper ultricies magna id eleifend. Proin venenatis scelerisque est, 
+                in iaculis libero sodales quis. Suspendisse et arcu in nunc tristique lobortis. Etiam in sollicitudin velit, 
+                sed maximus urna. Maecenas mollis lectus in mauris lacinia, vel viverra 
+                est accumsan. Quisque a elementum sapien. Fusce nec lectus est. Donec efficitur tellus luctus sem blandit 
+                egestas. Nunc eget nibh lorem. 
+                Aenean sit amet ullamcorper magna, ut egestas ante. Praesent sit amet felis non enim consectetur 
+                vehicula in vitae dolor. Pellentesque id 
+                lorem interdum est sollicitudin rutrum. Nulla ac elit non ligula rutrum fringilla. Integer mi elit, 
+                auctor et nisl eget, pulvinar ultrices turpis.
+            </h3>
+            <a href="#" role="button" class="btn btn-default" style="margin-top: 30px;">Meet Our Doctors</a>
+        </div>
+        <div style="max-width: 40%">
+            <img src="resources/imgs/MeetDentistCropped.jpg" aria-label="dentist helping a patient" style="width: 100%; height: auto; border: solid 6px; border-radius: 50px; border-color: #daeace;"/>
+        </div>
+    </div>
+    <div class="testimonials-container">
+        <div>
+            <h1>Your stay matters</h1>
+        </div>
+        <div>
+            <hr />
+        </div>
+        <div class="testimonials">
+            <div class="testimonial-left">
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id mollis sapien. Sed quis luctus tortor, vel tempus nibh. 
                     Pellentesque semper ultricies magna id eleifend. Proin venenatis scelerisque est, 
-                    in iaculis libero sodales quis. Suspendisse et arcu in nunc tristique lobortis. Etiam in sollicitudin velit, 
-                    sed maximus urna. Maecenas mollis lectus in mauris lacinia, vel viverra 
-                    est accumsan. Quisque a elementum sapien. Fusce nec lectus est. Donec efficitur tellus luctus sem blandit 
-                    egestas. Nunc eget nibh lorem. 
-                    Aenean sit amet ullamcorper magna, ut egestas ante. Praesent sit amet felis non enim consectetur 
-                    vehicula in vitae dolor. Pellentesque id 
-                    lorem interdum est sollicitudin rutrum. Nulla ac elit non ligula rutrum fringilla. Integer mi elit, 
-                    auctor et nisl eget, pulvinar ultrices turpis.
-                    Praesent placerat mi vitae sem suscipit, ac ornare magna accumsan. Suspendisse ullamcorper nisl ac 
-                    metus mattis, nec volutpat quam feugiat. 
-                    Aenean varius risus vel libero lobortis malesuada. Sed id vestibulum elit, id sagittis purus. Quisque
-                    sed tristique justo. Morbi velit enim, 
-                    placerat nec purus sed, consequat aliquet diam. Donec justo nisi, venenatis sit amet egestas sed,
-                    tincidunt sit amet ex. Sed 
+                    in iaculis libero sodales quis. Suspendisse et arcu in nunc tristique lobortis. Etiam in sollicitudin velit
                 </h3>
-                <a href="#" class="btn btn-default" style="margin-top: 30px;">Learn More About Our Doctors</a>
-                
+                <h4 class="pull-right">
+                    ~ John Doe
+                </h4>
+            </div>
+            <div class="quote-container">
+                <img src="~/resources/icons/start-quote.svg" aria-label="Start quote icon" />
+                <hr />
+                <img src="~/resources/icons/end-quote.svg" aria-label="End quote icon" />
+            </div>
+            <div class="testimonial-right">
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id mollis sapien. Sed quis luctus tortor, vel tempus nibh. 
+                    Pellentesque semper ultricies magna id eleifend. Proin venenatis scelerisque est, 
+                    in iaculis libero sodales quis. Suspendisse et arcu in nunc tristique lobortis. Etiam in sollicitudin velit
+                </h3>
+                <h4 class="pull-right">
+                    ~ Ginger Smith
+                </h4>
             </div>
         </div>
+        <div>
+            <hr />
+        </div>
+        <div>
+            <a href="#" role="button" class="btn-bright btn btn-default" style="margin-top: 30px;">Learn More About Our testimonies</a>
+        </div>
     </div>
-    <div style="height: 500px; width: 100%; text-align: center; vertical-align: middle; background-color: #879bae">
-        <p>Testimonies go here</p>
-        <br />
-        <p>Several fake testimonies will go here, maybe do images??? I dunno man, we'll figure it out.  Could do static too</p>
-    </div>
-    <div style="height: 500px; width: 100%; text-align: center; vertical-align: middle; background-color: #d3dde9">
+    <div class="contact-container">
         <p>Contact info</p>
         <br />
-        <p>Mock contact info left and right</p>
+        <div class="contacts">
+            <div class="contact-box-left">
+                <h2>
+                    Company Name
+                </h2>
+                <h4>
+                    8625 SW Cascade Avenue, 300, Beaverton, OR 97008
+                </h4>
+                <br />
+                <h3>
+                    Phone:
+                </h3>
+                <h4>
+                    360-356-6888
+                </h4>
+                <br />
+                <h3>
+                    Fax:
+                </h3>
+                <h4>
+                    340-233-2030
+                </h4>
+            </div>
+            <div class="contact-box-right">
+                <h2 class="center">
+                    Hours:
+                </h2>
+                <hr />
+                <h4>
+                    Mon: 7:30am-5:00pm
+                </h4>
+                <h4>
+                    Tue: 8:00am-4:30pm
+                </h4>
+                <h4>
+                    Wed: 8:00am-4:30pm
+                </h4>
+                <h4>
+                    Thu: 8:00am-5:30pm
+                </h4>
+                <h4>
+                    Fri: 8:00am-3:00pm
+                </h4>
+                <h4>
+                    Sat: By appointment
+                </h4>
+            </div>
+        </div>
     </div>
 </div>

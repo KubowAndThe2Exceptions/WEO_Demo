@@ -10,19 +10,41 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-default" style="background-color: #d3dde9">
-            <div class="container-fluid">
-                <ul class="nav">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Patient Information</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Reviews</a></li>
-
-                  <li class="pull-right"><a href="#">Request Appointment</a></li>
+        <div role="navigation" class="nav-container">
+            <nav class="navbar navbar-default navbar-left">
+                <ul class="nav navbar-left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Patient Information</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Reviews</a></li>
                 </ul>
-            </div>
+            </nav>
+            <nav class="navbar navbar-default navbar-right">
+                <ul class="nav navbar-right">
+                    <li class="pull-right"><a href="#">Request Appointment</a></li>
+                    <li role="link" class="pull-right"><a href="#"><img src="~/resources/icons/facebook-dark.svg" aria-label="facebook icon"/></a></li>
+                    <li role="link" class="pull-right"><a href="#"><img src="~/resources/icons/yelp-dark.svg" aria-label="yelp icon"/></a></li>
+                    <li role="link" class="pull-right"><a href="#"><img src="~/resources/icons/google-dark.svg" aria-label="google icon"/></a></li>
+                    <li role="link" class="pull-right"><a href="#"><img src="~/resources/icons/healthgrades-dark.svg" aria-label="healthgrades icon"/></a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="hours-banner">
+            <ul>
+                <li style="display: inline-block">Mon: 7:30am-5:00pm</li>
+                <li> | </li>
+                <li style="display: inline-block">Tues: 8:00am-4:30pm</li>
+                <li> | </li>
+                <li style="display: inline-block">Wed: 8:00am-4:30pm</li>
+                <li> | </li>
+                <li style="display: inline-block">Thur: 8:00am-5:30pm</li>
+                <li> | </li>
+                <li style="display: inline-block">Fri: 8:00am-3:00pm</li>
+                <li> | </li>
+                <li style="display: inline-block">Sat: By appointment</li>
+            </ul>
         </nav>
     </header>
     <div class="container-fluid">

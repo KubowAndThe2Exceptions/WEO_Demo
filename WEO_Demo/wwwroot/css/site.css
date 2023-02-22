@@ -29,31 +29,309 @@ body {
 .home-content {
 }
 
+.services-container {
+    background-color: #f2f7ee;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    min-height: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .service-cards {
-    margin-top: -140px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .service-card {
-    height: 400px;
-    width: 180px;
+    height: 140px;
+    width: 190px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .card-top {
     background-color: #daeace;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    height: 42%;
+    border-radius: 100px;
     width: auto;
     display: block;
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #8A898D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
-.card-bottom {
-    background-color: #d3dde9;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    height: 58%;
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0px 0px 0px 0px;
+    padding-bottom: 100px;
+    padding-top: 80px;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #daeace;
+    color: #8A898D;
+}
+.meetdocs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0px 30px 0px 30px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    align-items: center;
+    background-color: #f2f7ee;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #8A898D;
+}
+
+.testimonials-container {
+    padding-bottom: 100px;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #daeace;
+    color: #8A898D;
+}
+
+.testimonials-container > div > hr {
+    border-top: 4px double #8A898D;
+    border-radius: 40px;
+    border-top-color: #8A898D;
+    width: 55%;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials > h3 {
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+    color: #8A898D;
+}
+
+.testimonial-right {
+    border-right: double #8A898D;
+    border-bottom: double #8A898D;
+    border-bottom-right-radius: 15px;
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+}
+
+.testimonial-right > h4 {
+    padding-right: 40px;
+}
+
+.testimonial-left {
+    border-left: double #8A898D;
+    border-top: double #8A898D;
+    border-top-left-radius: 15px;
+    width: 40%;
+    padding: 10px 10px 10px 10px;
+}
+
+.testimonial-left > h4 {
+    padding-right: 40px;
+}
+
+.contact-container {
+    background-color: #f2f7ee;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #8A898D;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.contact-box-right {
+    text-align: left;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 6px solid #daeace;
+    border-radius: 20px;
+}
+
+.contact-box-right > hr {
+    width: 100%;
+    border-top: double #c3cdb5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-box-right > h3, h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.contact-box-right > h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-box-left {
+    text-align: left;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 6px solid #daeace;
+    border-radius: 20px;
+}
+
+.contact-box-left > hr {
+    width: 100%;
+    border-top: double #c3cdb5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-box-left > h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.contact-box-left > h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contact-box-left > h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hours-banner {
+    position: relative;
+    min-height: 35px;
+    margin-bottom: 0px;
+    background-color: #f2f7ee;
+}
+
+.hours-banner > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 2px;
+
+}
+.hours-banner > ul > li {
+    font-size: 20px;
+    list-style: none;
+}
+.btn, .btn-default {
+    background-color: #daeace;
+    font-size: 20px;
+    width: 60%;
+    color: #8A898D;
+}
+
+.btn-bright {
+    background-color: #CEDAEA;
+}
+.btn-bright.btn-default:hover {
+  color: #333;
+  background-color: #D0CEEA;
+  border-color: #adadad;
+}
+#services-btn {
+    width: min-content;
+}
+
+.nav > li > a {
+    color: #333;
+}
+
+.nav > li > a > img {
+    max-height: 28px;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-left {
+    flex-grow: 3;
+    background-color: #f2f7ee;
+}
+.navbar-left > li > a {
+    color: #8A898D;
+}
+
+.navbar-right {
+    background-color: #f2f7ee;
+    padding-right: 60px;
+}
+.navbar-right > li {
+    background-color: #daeace;
+    margin-left: 5px;
+}
+
+.navbar-right > li > a {
+    color: #8A898D;
+}
+
+.parallax-container{
+    min-height: 90vh;
+    background-attachment: fixed;
+    background-image: url(../resources/imgs/DentalRoomCropped.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    color: #8A898D;
+}
+.quote-container > img {
+    height: 75px;
     width: auto;
-    display: block;
+}
+
+.quote-container > hr {
+    border-top: double #8A898D;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
 }
