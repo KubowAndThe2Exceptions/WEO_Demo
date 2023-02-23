@@ -11,7 +11,7 @@
 <body>
     <header>
         <div role="navigation" class="nav-container">
-            <nav class="navbar navbar-default navbar-left">
+            <nav id="nav-container-left" class="navbar navbar-default">
                 <ul class="nav navbar-left">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -21,7 +21,7 @@
                     <li><a href="#">Reviews</a></li>
                 </ul>
             </nav>
-            <nav class="navbar navbar-default navbar-right">
+            <nav id="nav-container-right" class="navbar navbar-default navbar-right">
                 <ul class="nav navbar-right">
                     <li class="pull-right"><a href="#">Request Appointment</a></li>
                     <li role="link" class="pull-right"><a href="#"><img src="~/resources/icons/facebook-dark.svg" aria-label="facebook icon"/></a></li>
@@ -30,9 +30,25 @@
                     <li role="link" class="pull-right"><a href="#"><img src="~/resources/icons/healthgrades-dark.svg" aria-label="healthgrades icon"/></a></li>
                 </ul>
             </nav>
+            <nav id="nav-collapse" class="navbar navbar-default">
+                <button class="btn btn-default collapsed" type="button" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="false">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+                <div class="panel-collapse collapse" id="collapse-menu">
+                    <ul class="list-group list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Request Appointment</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Patient Information</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav class="hours-banner">
-            <ul class="hidden-xs hidden-sm hidden-md">
+        <nav class="hours-banner hidden-xs hidden-sm hidden-md">
+            <ul>
                 <li style="display: inline-block">Mon: 7:30am-5:00pm</li>
                 <li> | </li>
                 <li style="display: inline-block">Tues: 8:00am-4:30pm</li>
