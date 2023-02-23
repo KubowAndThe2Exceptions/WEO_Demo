@@ -349,15 +349,11 @@ body {
 }
 
 .nav-container {
+    background-color: #f2f7ee; 
     display: flex;
     flex-direction: row;
 }
 
-@media screen and (max-width: 1070px) {
-    .nav-container {
-        display: none;
-    }
-}
 
 .navbar-left {
     flex-grow: 3;
@@ -463,4 +459,44 @@ body {
 #testimonial-btn {
     margin-top: 30px;
     align-self: center;
+}
+
+#nav-container-right {
+
+}
+@media screen and (max-width: 1070px) {
+    #nav-container-right {
+        display: none;
+    }
+}
+
+#nav-container-left {
+
+}
+@media screen and (max-width: 1070px) {
+    #nav-container-left {
+        display: none;
+    }
+}
+
+#nav-collapse {
+    display: none;
+    background-color: #f2f7ee; 
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+@media screen and (max-width: 1070px) {
+    #nav-collapse {
+        display: block;
+    }
+}
+
+#nav-collapse > button {
+    width: 50px;
+}
+
+#collapse-menu {
+    width: 100%;
 }
