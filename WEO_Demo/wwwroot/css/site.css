@@ -85,7 +85,6 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin: 0px 30px 0px 30px;
     padding-bottom: 100px;
     padding-top: 50px;
     align-items: center;
@@ -158,7 +157,11 @@ body {
     text-align: center;
     vertical-align: middle;
     color: #8A898D;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
+
+
 
 .contacts {
     display: flex;
@@ -298,6 +301,8 @@ body {
 .navbar-right {
     background-color: #f2f7ee;
     padding-right: 60px;
+    width: 100%;
+    margin-right: 0px;
 }
 .navbar-right > li {
     background-color: #daeace;
@@ -309,7 +314,7 @@ body {
 }
 
 .parallax-container{
-    min-height: 90vh;
+    min-height: 100vh;
     background-attachment: fixed;
     background-image: url(../resources/imgs/DentalRoomCropped.jpg);
     background-position: center;
