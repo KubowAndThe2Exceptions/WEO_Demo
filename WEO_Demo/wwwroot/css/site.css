@@ -384,6 +384,11 @@ body {
     background-position: center;
     background-size: cover;
 }
+@media screen and (max-width: 1000px){
+    .parallax-container{
+        background-attachment: initial;
+    }
+}
 
 .quote-container {
     display: flex;
