@@ -378,7 +378,7 @@ body {
 }
 
 .parallax-container{
-    min-height: 100vh;
+    min-height: 70vh;
     background-attachment: fixed;
     background-image: url(../resources/imgs/DentalRoomCropped.jpg);
     background-position: center;
