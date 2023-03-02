@@ -464,6 +464,12 @@ body {
 #testimonial-btn {
     margin-top: 30px;
     align-self: center;
+    width: 25%;
+}
+@media screen and (max-width: 1000px){
+    #testimonial-btn {
+        width: 80%;
+    }
 }
 
 #nav-container-right {
